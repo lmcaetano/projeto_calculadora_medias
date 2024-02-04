@@ -50,7 +50,7 @@ function seletorEmoji() {
 }
 
 function atualizaMediaFinal() {
-    mediaFinal.innerHTML = calculaMediaFinal();
+    mediaFinal.innerHTML = calculaMediaFinal().toFixed(2);
     mediaFinalResultado.innerHTML = calculaMediaFinal() >= notaMinima ? spanAprovado : spanReprovado;
 }
 
